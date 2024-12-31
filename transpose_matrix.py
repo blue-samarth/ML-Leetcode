@@ -1,5 +1,6 @@
 def transpose_matrix(a: list[list[int|float]]) -> list[list[int|float]]:
-	if not a or not a[0] : return []
+	if not a or not a[0] : 
+		return []
 	rows : int = len(a)
 	cols : int = len(a[0])
 
