@@ -26,10 +26,10 @@ def performance_metrics(actual : list[int] , predicted : list[int]) -> tuple :
             TN += 1
         elif actual[i] == 0 and predicted[i] == 1:
             FP += 1
-        else:
+        elif actual[i] == 1 and predicted[i] == 0:
             FN += 1
     
-    confusion_matrix : list[list[int]] = [[TN , FP] , [FN , TP]]
+    confusion_matrix : list[list[int]] = [[TP, FN], [FP, TN]]
     accuracy : float = (TP + TN) / n
     precision : float = TP / (TP + FP) if TP + FP != 0 else 0
     recall : float = TP / (TP + FN) if TP + FN != 0 else 0
