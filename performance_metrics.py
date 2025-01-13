@@ -12,7 +12,8 @@ def performance_metrics(actual : list[int] , predicted : list[int]) -> tuple :
     n : int = len(actual)
     m : int = len(predicted)
 
-    if n != m: return ([[0 , 0],[0 , 0]],0,0,0,0)
+    if n != m : 
+        return ([[0 , 0],[0 , 0]],0,0,0,0)
 
     TP : int = 0
     TN : int = 0
