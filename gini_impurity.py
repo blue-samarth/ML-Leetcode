@@ -24,7 +24,8 @@ def gini_impurity(y : np.ndarray | list[int | float] ) -> float:
 
     n : int = len(y)
 
-    if n == 0: raise ValueError("Input array is empty")
+    if n == 0: 
+        raise ValueError("Input array is empty")
     y_arr : np.ndarray = np.array(y)
     
     if not np.issubdtype(y_arr.dtype, np.number):
