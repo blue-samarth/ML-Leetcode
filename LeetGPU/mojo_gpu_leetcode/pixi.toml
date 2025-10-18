@@ -1,0 +1,11 @@
+[workspace]
+authors = ["Samarth <samarth38work@gmail.com>"]
+channels = ["https://conda.modular.com/max-nightly", "conda-forge"]
+name = "mojo_gpu_leetcode"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+mojo = ">=0.25.7.0.dev2025101805,<0.26"
