@@ -1,0 +1,19 @@
+# Ignore all executable binaries (Linux/macOS)
+*.out
+*.exe
+*.bin
+*~
+
+# Ignore object files
+*.o
+*.obj
+
+# Ignore shared libraries
+*.so
+*.dylib
+*.dll
+
+# Ignore temporary logs and editor files
+*.log
+*.swp
+
