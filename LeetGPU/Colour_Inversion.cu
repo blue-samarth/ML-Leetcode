@@ -8,10 +8,10 @@ __global__ void invert_kernel(unsigned char* image, int width, int height) {
     int total_pixels = width * height; // Total number of pixels
 
     if (indx < total_pixels) { // Boundary check
-        int base_idx = indx * 4; // Base index for RGBA so that we skip alpha channel
-        image[base_idx + 0] = 255 - image[base_idx + 0]; // R
-        image[base_idx + 1] = 255 - image[base_idx + 1]; // G
-        image[base_idx + 2] = 255 - image[base_idx + 2]; // B
+	int base_indx = indx*4;
+	image[base_indx + 0] ^= 255;
+	image[base_indx + 1] ^= 255;
+	image[base_indx + 2] ^= 255;
     }
 }
 
