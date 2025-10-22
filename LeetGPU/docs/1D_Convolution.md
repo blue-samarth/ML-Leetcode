@@ -1,6 +1,3 @@
-# 1D Convolution — CUDA & Mojo
-
-````markdown
 # 1D Convolution - CUDA & Mojo Implementations
 
 ## 📋 Overview
@@ -130,9 +127,3 @@ Both kernels produce `[-2, -2]`.
 4. Shared memory and tiling are standard optimizations when kernel_size is moderate.
 
 ---
-
-**Files**: `1d_Convolution.cu`, `mojo_gpu_leetcode/1D_Convolution.mojo`  
-**Doc**: `docs/1D_Convolution.md`  
-**Date**: October 22, 2025
-
-````
